@@ -2,6 +2,13 @@
 $clockSize: 300px;
 $indexIndent: 20px;
 
+$hourHandWidth: 7px;
+$hourHandLength: 90px;
+$minuteHandWidth: 5px;
+$minuteHandLength: 130px;
+$secondHandWidth: 1px;
+$secondHandLength: 140px;
+
 
 body {
     position: absolute;
@@ -17,15 +24,23 @@ body {
 }
 
 #clock {
-	background-color: white;
-	border: 1px solid black;
+	position: relative;
 	width: $clockSize;
 	height: $clockSize;
-	
+
+	background-color: white;
+	border: 1px solid black;
+}
+
+.clock-face {
+	position: absolute;
+	top: 0;
+	left: 0;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 	ul.indices {
 		position: relative;
 		padding: 0;
@@ -33,16 +48,16 @@ body {
 		width: 100%;
 		margin-top: -18px;
 		padding: $indexIndent;
-
+		
 		li {
 			position: absolute;
 			width: calc(#{$clockSize} - 2 * #{$indexIndent});
 			color: #ccc;
-
+			
 			&:nth-child(5n) {
 				color: black;
 			}
-
+			
 			@for $index from 1 through 60 { // 60 is amount of indices
 				&:nth-child(#{$index}) {
 					transform: rotate(calc(#{$index} * 6deg))
@@ -53,16 +68,42 @@ body {
 }
 
 .circle{
-	width: 300px;
-	height: 300px;
+	width: $clockSize;
+	height: $clockSize;
 	
 	border-radius: 50%;
 }
 
-
-.hand{
+.hand-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
-	transition: 1000ms linear;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hour-hand {
+	width: $hourHandWidth;
+	height: $hourHandLength;
+	background-color: black;
+	transform: translateY(calc(#{$hourHandLength / -2}));
+	border-radius: $hourHandWidth;
+}
+
+#minute-hand {
+	width: $minuteHandWidth;
+	height: $minuteHandLength;
+	background-color: black;
+	transform: translateY(calc(#{$minuteHandLength / -2}));
+	border-radius: $minuteHandWidth;
+}
+
+#second-hand {
+	width: $secondHandWidth;
+	height: $secondHandLength;
+	background-color: red;
+	transform: translateY(calc(#{$secondHandLength / -2}));
+	border-radius: $secondHandWidth;
 }
