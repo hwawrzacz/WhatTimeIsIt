@@ -4,19 +4,32 @@
 <head>
 	<title>Clock</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-	<script src="./script.js"></script>
 	<meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1">
 	<meta name="author" content="Hubert Wawrzacz | hubert.wawrzacz@gmail.com | (+48)-606-134-164">
 </head>
 
 <body>
-	<div id="clock" class="clock-size">
-		<div id="sec-hand" class="clock-size hand"></div>	
-		<div id="min-hand" class="clock-size hand"></div>	
-		<div id="hour-hand" class="clock-size hand"></div>
+	<div id="clock" class="circle">
+		<ul class="indices">
+		</ul>
+
+		<!-- <div class="hand-wrapper circle">
+			<div id="sec-hand"></div>
+		</div>
+
+		<div class="hand-wrapper circle">
+			<div id="min-hand"></div>
+		</div>
+
+		<div class="hand-wrapper circle">
+			<div id="hour-hand"></div>
+		</div> -->
 	</div>
+
+	<script src="./script.js"></script>
+	<script src="./initializeDOM.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+/* ===== CONFIG ===== */
+$clockSize: 300px;
+$indexIndent: 20px;
+
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background-color: #bbb;
+}
+
+#clock {
+	background-color: white;
+	border: 1px solid black;
+	width: $clockSize;
+	height: $clockSize;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	ul.indices {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		margin-top: -18px;
+		padding: $indexIndent;
+
+		li {
+			position: absolute;
+			width: calc(#{$clockSize} - 2 * #{$indexIndent});
+			color: #ccc;
+
+			&:nth-child(5n) {
+				color: black;
+			}
+
+			@for $index from 1 through 60 { // 60 is amount of indices
+				&:nth-child(#{$index}) {
+					transform: rotate(calc(#{$index} * 6deg))
+				}
+			}
+		}
+	}
+}
+
+.circle{
+	width: 300px;
+	height: 300px;
+	
+	border-radius: 50%;
+}
+
+
+.hand{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1000ms linear;
+}
