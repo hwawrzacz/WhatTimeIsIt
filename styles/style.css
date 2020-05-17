@@ -5,15 +5,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #bbb;
 }
 
@@ -29,334 +23,203 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .clock-face ul.indices {
   position: relative;
-  padding: 0;
-  margin: 0;
   width: 100%;
-  margin-top: -18px;
+  margin: -18px 0 0;
   padding: 20px;
 }
-
 .clock-face ul.indices li {
   position: absolute;
   width: calc(300px - 2 * 20px);
   color: #ccc;
 }
-
 .clock-face ul.indices li:nth-child(5n) {
   color: black;
 }
-
 .clock-face ul.indices li:nth-child(1) {
-  -webkit-transform: rotate(calc(1 * 6deg));
-          transform: rotate(calc(1 * 6deg));
+  transform: rotate(calc(1 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(2) {
-  -webkit-transform: rotate(calc(2 * 6deg));
-          transform: rotate(calc(2 * 6deg));
+  transform: rotate(calc(2 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(3) {
-  -webkit-transform: rotate(calc(3 * 6deg));
-          transform: rotate(calc(3 * 6deg));
+  transform: rotate(calc(3 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(4) {
-  -webkit-transform: rotate(calc(4 * 6deg));
-          transform: rotate(calc(4 * 6deg));
+  transform: rotate(calc(4 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(5) {
-  -webkit-transform: rotate(calc(5 * 6deg));
-          transform: rotate(calc(5 * 6deg));
+  transform: rotate(calc(5 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(6) {
-  -webkit-transform: rotate(calc(6 * 6deg));
-          transform: rotate(calc(6 * 6deg));
+  transform: rotate(calc(6 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(7) {
-  -webkit-transform: rotate(calc(7 * 6deg));
-          transform: rotate(calc(7 * 6deg));
+  transform: rotate(calc(7 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(8) {
-  -webkit-transform: rotate(calc(8 * 6deg));
-          transform: rotate(calc(8 * 6deg));
+  transform: rotate(calc(8 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(9) {
-  -webkit-transform: rotate(calc(9 * 6deg));
-          transform: rotate(calc(9 * 6deg));
+  transform: rotate(calc(9 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(10) {
-  -webkit-transform: rotate(calc(10 * 6deg));
-          transform: rotate(calc(10 * 6deg));
+  transform: rotate(calc(10 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(11) {
-  -webkit-transform: rotate(calc(11 * 6deg));
-          transform: rotate(calc(11 * 6deg));
+  transform: rotate(calc(11 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(12) {
-  -webkit-transform: rotate(calc(12 * 6deg));
-          transform: rotate(calc(12 * 6deg));
+  transform: rotate(calc(12 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(13) {
-  -webkit-transform: rotate(calc(13 * 6deg));
-          transform: rotate(calc(13 * 6deg));
+  transform: rotate(calc(13 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(14) {
-  -webkit-transform: rotate(calc(14 * 6deg));
-          transform: rotate(calc(14 * 6deg));
+  transform: rotate(calc(14 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(15) {
-  -webkit-transform: rotate(calc(15 * 6deg));
-          transform: rotate(calc(15 * 6deg));
+  transform: rotate(calc(15 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(16) {
-  -webkit-transform: rotate(calc(16 * 6deg));
-          transform: rotate(calc(16 * 6deg));
+  transform: rotate(calc(16 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(17) {
-  -webkit-transform: rotate(calc(17 * 6deg));
-          transform: rotate(calc(17 * 6deg));
+  transform: rotate(calc(17 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(18) {
-  -webkit-transform: rotate(calc(18 * 6deg));
-          transform: rotate(calc(18 * 6deg));
+  transform: rotate(calc(18 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(19) {
-  -webkit-transform: rotate(calc(19 * 6deg));
-          transform: rotate(calc(19 * 6deg));
+  transform: rotate(calc(19 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(20) {
-  -webkit-transform: rotate(calc(20 * 6deg));
-          transform: rotate(calc(20 * 6deg));
+  transform: rotate(calc(20 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(21) {
-  -webkit-transform: rotate(calc(21 * 6deg));
-          transform: rotate(calc(21 * 6deg));
+  transform: rotate(calc(21 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(22) {
-  -webkit-transform: rotate(calc(22 * 6deg));
-          transform: rotate(calc(22 * 6deg));
+  transform: rotate(calc(22 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(23) {
-  -webkit-transform: rotate(calc(23 * 6deg));
-          transform: rotate(calc(23 * 6deg));
+  transform: rotate(calc(23 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(24) {
-  -webkit-transform: rotate(calc(24 * 6deg));
-          transform: rotate(calc(24 * 6deg));
+  transform: rotate(calc(24 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(25) {
-  -webkit-transform: rotate(calc(25 * 6deg));
-          transform: rotate(calc(25 * 6deg));
+  transform: rotate(calc(25 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(26) {
-  -webkit-transform: rotate(calc(26 * 6deg));
-          transform: rotate(calc(26 * 6deg));
+  transform: rotate(calc(26 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(27) {
-  -webkit-transform: rotate(calc(27 * 6deg));
-          transform: rotate(calc(27 * 6deg));
+  transform: rotate(calc(27 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(28) {
-  -webkit-transform: rotate(calc(28 * 6deg));
-          transform: rotate(calc(28 * 6deg));
+  transform: rotate(calc(28 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(29) {
-  -webkit-transform: rotate(calc(29 * 6deg));
-          transform: rotate(calc(29 * 6deg));
+  transform: rotate(calc(29 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(30) {
-  -webkit-transform: rotate(calc(30 * 6deg));
-          transform: rotate(calc(30 * 6deg));
+  transform: rotate(calc(30 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(31) {
-  -webkit-transform: rotate(calc(31 * 6deg));
-          transform: rotate(calc(31 * 6deg));
+  transform: rotate(calc(31 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(32) {
-  -webkit-transform: rotate(calc(32 * 6deg));
-          transform: rotate(calc(32 * 6deg));
+  transform: rotate(calc(32 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(33) {
-  -webkit-transform: rotate(calc(33 * 6deg));
-          transform: rotate(calc(33 * 6deg));
+  transform: rotate(calc(33 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(34) {
-  -webkit-transform: rotate(calc(34 * 6deg));
-          transform: rotate(calc(34 * 6deg));
+  transform: rotate(calc(34 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(35) {
-  -webkit-transform: rotate(calc(35 * 6deg));
-          transform: rotate(calc(35 * 6deg));
+  transform: rotate(calc(35 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(36) {
-  -webkit-transform: rotate(calc(36 * 6deg));
-          transform: rotate(calc(36 * 6deg));
+  transform: rotate(calc(36 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(37) {
-  -webkit-transform: rotate(calc(37 * 6deg));
-          transform: rotate(calc(37 * 6deg));
+  transform: rotate(calc(37 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(38) {
-  -webkit-transform: rotate(calc(38 * 6deg));
-          transform: rotate(calc(38 * 6deg));
+  transform: rotate(calc(38 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(39) {
-  -webkit-transform: rotate(calc(39 * 6deg));
-          transform: rotate(calc(39 * 6deg));
+  transform: rotate(calc(39 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(40) {
-  -webkit-transform: rotate(calc(40 * 6deg));
-          transform: rotate(calc(40 * 6deg));
+  transform: rotate(calc(40 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(41) {
-  -webkit-transform: rotate(calc(41 * 6deg));
-          transform: rotate(calc(41 * 6deg));
+  transform: rotate(calc(41 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(42) {
-  -webkit-transform: rotate(calc(42 * 6deg));
-          transform: rotate(calc(42 * 6deg));
+  transform: rotate(calc(42 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(43) {
-  -webkit-transform: rotate(calc(43 * 6deg));
-          transform: rotate(calc(43 * 6deg));
+  transform: rotate(calc(43 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(44) {
-  -webkit-transform: rotate(calc(44 * 6deg));
-          transform: rotate(calc(44 * 6deg));
+  transform: rotate(calc(44 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(45) {
-  -webkit-transform: rotate(calc(45 * 6deg));
-          transform: rotate(calc(45 * 6deg));
+  transform: rotate(calc(45 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(46) {
-  -webkit-transform: rotate(calc(46 * 6deg));
-          transform: rotate(calc(46 * 6deg));
+  transform: rotate(calc(46 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(47) {
-  -webkit-transform: rotate(calc(47 * 6deg));
-          transform: rotate(calc(47 * 6deg));
+  transform: rotate(calc(47 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(48) {
-  -webkit-transform: rotate(calc(48 * 6deg));
-          transform: rotate(calc(48 * 6deg));
+  transform: rotate(calc(48 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(49) {
-  -webkit-transform: rotate(calc(49 * 6deg));
-          transform: rotate(calc(49 * 6deg));
+  transform: rotate(calc(49 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(50) {
-  -webkit-transform: rotate(calc(50 * 6deg));
-          transform: rotate(calc(50 * 6deg));
+  transform: rotate(calc(50 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(51) {
-  -webkit-transform: rotate(calc(51 * 6deg));
-          transform: rotate(calc(51 * 6deg));
+  transform: rotate(calc(51 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(52) {
-  -webkit-transform: rotate(calc(52 * 6deg));
-          transform: rotate(calc(52 * 6deg));
+  transform: rotate(calc(52 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(53) {
-  -webkit-transform: rotate(calc(53 * 6deg));
-          transform: rotate(calc(53 * 6deg));
+  transform: rotate(calc(53 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(54) {
-  -webkit-transform: rotate(calc(54 * 6deg));
-          transform: rotate(calc(54 * 6deg));
+  transform: rotate(calc(54 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(55) {
-  -webkit-transform: rotate(calc(55 * 6deg));
-          transform: rotate(calc(55 * 6deg));
+  transform: rotate(calc(55 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(56) {
-  -webkit-transform: rotate(calc(56 * 6deg));
-          transform: rotate(calc(56 * 6deg));
+  transform: rotate(calc(56 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(57) {
-  -webkit-transform: rotate(calc(57 * 6deg));
-          transform: rotate(calc(57 * 6deg));
+  transform: rotate(calc(57 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(58) {
-  -webkit-transform: rotate(calc(58 * 6deg));
-          transform: rotate(calc(58 * 6deg));
+  transform: rotate(calc(58 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(59) {
-  -webkit-transform: rotate(calc(59 * 6deg));
-          transform: rotate(calc(59 * 6deg));
+  transform: rotate(calc(59 * 6deg));
 }
-
 .clock-face ul.indices li:nth-child(60) {
-  -webkit-transform: rotate(calc(60 * 6deg));
-          transform: rotate(calc(60 * 6deg));
+  transform: rotate(calc(60 * 6deg));
 }
 
 .circle {
@@ -369,23 +232,17 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
 }
 
 #hour-hand {
   width: 7px;
   height: 90px;
   background-color: black;
-  -webkit-transform: translateY(calc(-45px));
-          transform: translateY(calc(-45px));
+  transform: translateY(calc((90px - 5px) / -2));
   border-radius: 7px;
 }
 
@@ -393,8 +250,7 @@ body {
   width: 5px;
   height: 130px;
   background-color: black;
-  -webkit-transform: translateY(calc(-65px));
-          transform: translateY(calc(-65px));
+  transform: translateY(calc((130px - 5px) / -2));
   border-radius: 5px;
 }
 
@@ -402,8 +258,25 @@ body {
   width: 1px;
   height: 140px;
   background-color: red;
-  -webkit-transform: translateY(calc(-70px));
-          transform: translateY(calc(-70px));
+  transform: translateY(calc((140px - 5px) / -2));
   border-radius: 1px;
 }
+
+.submit-section {
+  margin-top: 20px;
+}
+.submit-section input {
+  margin: 5px auto;
+}
+.submit-section button {
+  width: 200px;
+  height: 30px;
+  margin: 5px auto;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

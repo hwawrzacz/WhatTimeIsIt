@@ -9,6 +9,14 @@ $minuteHandLength: 130px;
 $secondHandWidth: 1px;
 $secondHandLength: 140px;
 
+$buttonDefaultWidth: 200px;
+$buttonDefaultHeight: 30px;
+
+$borderRadius: 5px;
+
+$transition: 300ms;
+
+
 
 body {
     position: absolute;
@@ -43,10 +51,8 @@ body {
 
 	ul.indices {
 		position: relative;
-		padding: 0;
-		margin: 0;
 		width: 100%;
-		margin-top: -18px;
+		margin: -18px 0 0;
 		padding: $indexIndent;
 		
 		li {
@@ -82,13 +88,15 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	transition: $transition;
 }
 
 #hour-hand {
 	width: $hourHandWidth;
 	height: $hourHandLength;
 	background-color: black;
-	transform: translateY(calc(#{$hourHandLength / -2}));
+	transform: translateY(calc((#{$hourHandLength} - 5px) / -2));
 	border-radius: $hourHandWidth;
 }
 
@@ -96,7 +104,7 @@ body {
 	width: $minuteHandWidth;
 	height: $minuteHandLength;
 	background-color: black;
-	transform: translateY(calc(#{$minuteHandLength / -2}));
+	transform: translateY(calc((#{$minuteHandLength} - 5px) / -2));
 	border-radius: $minuteHandWidth;
 }
 
@@ -104,6 +112,25 @@ body {
 	width: $secondHandWidth;
 	height: $secondHandLength;
 	background-color: red;
-	transform: translateY(calc(#{$secondHandLength / -2}));
+	transform: translateY(calc((#{$secondHandLength} - 5px) / -2));
 	border-radius: $secondHandWidth;
+}
+
+.submit-section {
+	margin-top: 20px;
+
+	input {
+		margin: 5px auto
+	}
+
+	button {
+		width: $buttonDefaultWidth;
+		height: $buttonDefaultHeight;
+		margin: 5px auto;
+		background-color: transparent;
+		border-radius: $borderRadius;
+		outline: none;
+		border: 1px solid black;
+		cursor: pointer;
+	}
 }

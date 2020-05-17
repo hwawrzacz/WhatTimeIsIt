@@ -1,0 +1,51 @@
+.fx {
+  display: flex;
+}
+
+.fx-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fx-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.fx-align-center {
+  align-items: center;
+}
+
+.fx-align-evenly {
+  align-items: space-evenly;
+}
+
+.fx-align-spread {
+  align-items: spread;
+}
+
+.fx-justify-center {
+  justify-content: center;
+}
+
+.fx-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.fx-justify-spread {
+  justify-content: spread;
+}
+
+.fx-justify-between {
+  justify-content: space-between;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-no-wrap {
+  flex-wrap: nowrap;
+}
+
+/*# sourceMappingURL=flex.css.map */

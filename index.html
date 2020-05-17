@@ -5,34 +5,48 @@
 	<title>Clock</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/flex.css">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1">
 	<meta name="author" content="Hubert Wawrzacz | hubert.wawrzacz@gmail.com | (+48)-606-134-164">
 </head>
 
 <body>
-	<div id="clock" class="circle">
-		<div class="clock-face circle">
-			<ul class="indices">
-			</ul>
+	<div class="container">
+		<div id="clock" class="circle">
+			<div class="clock-face circle">
+				<ul class="indices">
+				</ul>
+			</div>
+
+
+			<div id="hour-hand-wrapper" class="hand-wrapper circle">
+				<div id="hour-hand"></div>
+			</div>
+
+			<div id="minute-hand-wrapper" class="hand-wrapper circle">
+				<div id="minute-hand"></div>
+			</div>
+
+<!--			<div id="second-hand-wrapper" class="hand-wrapper circle">-->
+<!--				<div id="second-hand"></div>-->
+<!--			</div>-->
 		</div>
 
-
-		<div id="hour-hand-wrapper" class="hand-wrapper circle">
-			<div id="hour-hand"></div>
+		<div class="submit-section fx-col fx-align-center">
+			<input type="time" id="answer" />
+			<button id="submit">Sprawdź</button>
+			<button id="reset">Nowa godzina</button>
 		</div>
 
-		<div id="minute-hand-wrapper" class="hand-wrapper circle">
-			<div id="minute-hand"></div>
-		</div>
+		<div class="controls">
 
-		<div id="second-hand-wrapper" class="hand-wrapper circle">
-			<div id="second-hand"></div>
 		</div>
 	</div>
 
 	<!-- <script src="./script.js"></script> -->
-	<script src="./initializeDOM.js"></script>
+	<script src="./scripts/initializeDOM.js"></script>
+	<script src="./scripts/clock.js"></script>
 </body>
 
 </html>
