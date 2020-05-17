@@ -1,4 +1,9 @@
 /* ===== CONFIG ===== */
+/* Colors */
+* {
+  box-sizing: border-box;
+}
+
 body {
   position: absolute;
   top: 0;
@@ -266,17 +271,40 @@ body {
   margin-top: 20px;
 }
 .submit-section input {
+  width: 200px;
+  height: 30px;
   margin: 5px auto;
+  padding-left: 30px;
+  text-align: center;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .submit-section button {
   width: 200px;
   height: 30px;
   margin: 5px auto;
   background-color: transparent;
-  border-radius: 5px;
   outline: none;
-  border: 1px solid black;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.87);
+  transition: 100ms;
+}
+.submit-section button:hover {
+  box-shadow: 0 5px 13px -5px rgba(0, 0, 0, 0.87);
+}
+.submit-section button:active {
+  box-shadow: 0 5px 7px -5px rgba(0, 0, 0, 0.87);
+}
+.submit-section #submit {
+  background-color: #689f38;
+  color: white;
+}
+.submit-section #reset {
+  background-color: #b71c1c;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

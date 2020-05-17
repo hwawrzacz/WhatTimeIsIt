@@ -15,8 +15,20 @@ $buttonDefaultHeight: 30px;
 $borderRadius: 5px;
 
 $transition: 300ms;
+$buttonTransition: 100ms;
+
+/* Colors */
+$primary: rgba(#abc, 2);
+$accent: #689f38;
+$warn: #b71c1c;
+
+$textOnAccent: white;
+$textOnWarn: white;
 
 
+* {
+	box-sizing: border-box;
+}
 
 body {
     position: absolute;
@@ -120,17 +132,45 @@ body {
 	margin-top: 20px;
 
 	input {
-		margin: 5px auto
+		width: $buttonDefaultWidth;
+		height: $buttonDefaultHeight;
+		margin: 5px auto;
+		padding-left: 30px;
+		text-align: center;
+		outline: none;
+		border: 1px solid black;
+		border-radius: $borderRadius;
 	}
 
 	button {
 		width: $buttonDefaultWidth;
 		height: $buttonDefaultHeight;
 		margin: 5px auto;
+
 		background-color: transparent;
-		border-radius: $borderRadius;
 		outline: none;
-		border: 1px solid black;
+		border: none;
+		border-radius: $borderRadius;
 		cursor: pointer;
+
+		box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.87);
+		transition: $buttonTransition;
+
+		&:hover {
+			box-shadow: 0 5px 13px -5px rgba(0, 0, 0, 0.87);
+		}
+		&:active {
+			box-shadow: 0 5px 7px -5px rgba(0, 0, 0, 0.87);
+		}
+	}
+
+	#submit {
+		background-color: $accent;
+		color: $textOnAccent;
+	}
+
+	#reset {
+		background-color: $warn;
+		color: $textOnWarn;
 	}
 }
