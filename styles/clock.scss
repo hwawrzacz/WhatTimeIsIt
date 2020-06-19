@@ -28,7 +28,7 @@
 			position: absolute;
 			// left: 50%;
 			width: calc((#{$clock-size} - 6 * #{$index-indent}));
-			color: #ccc;
+			color: #ddd;
 			
 			&:nth-child(5n) {
 				color: black;

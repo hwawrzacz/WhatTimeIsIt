@@ -184,7 +184,7 @@ h1 {
 .clock-face ul.indices li {
   position: absolute;
   width: calc((300px - 6 * 12px));
-  color: #ccc;
+  color: #ddd;
 }
 
 .clock-face ul.indices li:nth-child(5n) {
