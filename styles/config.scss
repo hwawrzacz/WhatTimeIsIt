@@ -1,0 +1,32 @@
+/* ===== CONFIG ===== */
+$clock-size: 300px;
+$index-indent: 12px;
+
+$hour-hand-width: 7px;
+$hour-hand-length: 90px;
+$minute-hand-width: 5px;
+$minute-hand-length: 130px;
+$second-hand-width: 1px;
+$second-hand-length: 140px;
+
+$button-default-width: 200px;
+$button-default-height: 40px;
+
+$border-radius: 5px;
+
+$transition: 300ms;
+$button-transition: 100ms;
+
+/* Colors */
+$bg-color-main: rgb(247, 241, 218);
+$primary: rgba(rgb(41, 128, 214), 2);
+$accent: #b40c82;
+$success:rgb(78, 155, 26);
+$warn: #d6960c;
+$danger: #b71c1c;
+
+$text-on-accent: white;
+$text-on-primary: white;
+$text-on-success: white;
+$text-on-warn: white;
+$text-on-danger: white;

@@ -2,11 +2,12 @@ let hour;
 let minute;
 
 const answer = document.querySelector('#answer');
-const submitButton = document.querySelector('#submit');
-const resetButton = document.querySelector('#reset');
+const submitButton = document.querySelector('.submit');
+const resetButton = document.querySelector('.reset');
 const hourHand = document.querySelector('#hour-hand-wrapper');
 const minuteHand = document.querySelector('#minute-hand-wrapper');
 
+const toastManager = new Toast();
 
 const addClickListeners = () => {
     submitButton.addEventListener('click', handleSubmit);
@@ -53,16 +54,27 @@ const checkAnswer = () => {
     const answerMinute = parseInt(answerTab[1]) % 60;
 
     if (Number.isNaN(answerHour) || Number.isNaN(answerMinute)) {
-        console.log("Incorrect input");
+        const message = 'Nie podano godziny'
+        toastManager.showToastError(message);
     } else {
         if (answerHour === hour && answerMinute === minute) {
-            console.log("Good!");
-        } else if (answerHour === hour) {
-            console.warn(`Hour is good, but you were wrong about ${Math.abs(minute - answerMinute)} minutes.`);
-        } else if(answerMinute === minute) {
-            console.warn(`Minutes are good, but you were wrong about ${Math.abs(hour - answerHour)} hours.`);
-        } else {
-            console.error(`Unfortunately, your answer is incorrect.`);
+            toastManager.showToastSuccess();
+            setTimeout(handleReset, 3000);
+        }
+        else if (answerHour === hour) {
+            const value = Math.abs(minute - answerMinute);
+            const suffix = value == 1 ? 'ę' : [2, 3, 4].includes(value % 10) ? 'y' : '';
+            const message = `Godzina się zgadza, ale pomyliłeś się o ${value} minut${suffix}.`;
+            toastManager.showToastAlmost(message);
+        }
+        else if (answerMinute === minute) {
+            const value = Math.abs(hour - answerHour);
+            const suffix = value == 1 ? 'ę' : [2, 3, 4].includes(value % 10) ? 'y' : '';
+            const message = `Minuty się zgadzają, ale pomyliłeś się o ${value} godzin${suffix}.`;
+            toastManager.showToastAlmost(message);
+        }
+        else {
+            toastManager.showToastFailure();
         }
     }
 }

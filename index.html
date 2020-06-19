@@ -4,21 +4,21 @@
 <head>
 	<title>Clock</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./styles/neumorphi.css">
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
-	<link rel="stylesheet" type="text/css" href="./styles/flex.css">
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1">
 	<meta name="author" content="Hubert Wawrzacz | hubert.wawrzacz@gmail.com | (+48)-606-134-164">
 </head>
 
-<body>
+<body class="nmrph-theme">
 	<div class="container">
-		<div id="clock" class="circle">
+		<h1>Która godzina?</h1>
+
+		<div id="clock" class="nmrph-tile--circ--convex--concave">
 			<div class="clock-face circle">
 				<ul class="indices">
 				</ul>
 			</div>
-
 
 			<div id="hour-hand-wrapper" class="hand-wrapper circle">
 				<div id="hour-hand"></div>
@@ -27,25 +27,29 @@
 			<div id="minute-hand-wrapper" class="hand-wrapper circle">
 				<div id="minute-hand"></div>
 			</div>
-
-<!--			<div id="second-hand-wrapper" class="hand-wrapper circle">-->
-<!--				<div id="second-hand"></div>-->
-<!--			</div>-->
 		</div>
 
 		<div class="submit-section fx-col fx-align-center">
-			<input type="time" id="answer" />
-			<button id="submit">Sprawdź</button>
-			<button id="reset">Nowa godzina</button>
+			<div class="nmrph-input--rect--convex--concave my-input">
+				<input type="time" id="answer" />
+			</div>
 		</div>
 
 		<div class="controls">
+			<button class="nmrph-button nmrph-button--convex submit">Sprawdź</button>
+			<button class="nmrph-button nmrph-button--convex reset">Nowa godzina</button>
+		</div>
+
+		<div class="nmrph-tile--rect--convex toast invisible">
+			<p class="message"></p>
+			<button>Zamknij</button>
 
 		</div>
 	</div>
 
 	<!-- <script src="./script.js"></script> -->
 	<script src="./scripts/initializeDOM.js"></script>
+	<script src="./scripts/Toast.js"></script>
 	<script src="./scripts/clock.js"></script>
 </body>
 

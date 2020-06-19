@@ -1,0 +1,77 @@
+@import 'config';
+
+.toast {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: transparent;
+    color: $text-on-primary;
+    transition: 300ms;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+
+    &:after {
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+    }
+
+    &.visible {
+        visibility: visible;
+    }
+    
+    &.invisible {
+        visibility: hidden;
+    }
+    
+    &.success {
+        border-color: $success;
+        color: $success;
+    }
+
+    &.almost {
+        border-color: $warn;
+        color: $warn;
+    }
+
+    &.failure {
+        border-color: $danger;
+        color: $danger;
+    }
+
+    &.error {
+        border-color: $danger;
+        color: $danger;
+    }
+
+    .message {
+        margin: 8px;
+        margin-left: 20px;
+        font-size: 14px;
+        color: inherit;
+    }
+
+    button {
+        margin: 8px;
+        width: auto;
+        height: auto;
+        color: inherit;
+
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.05);
+        }
+    }    
+}

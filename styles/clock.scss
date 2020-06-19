@@ -1,0 +1,87 @@
+@import 'config';
+
+#clock {
+	position: relative;
+	width: $clock-size;
+	height: $clock-size;
+
+	// background-color: white;
+	// border: 1px solid black;
+}
+
+.clock-face {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	ul.indices {
+		position: relative;
+		width: calc(#{$clock-size} - 4 * #{$index-indent});
+		margin: -22px 0 0;
+		padding-left: $index-indent;
+		
+		li {
+			position: absolute;
+			// left: 50%;
+			width: calc((#{$clock-size} - 6 * #{$index-indent}));
+			color: #ccc;
+			
+			&:nth-child(5n) {
+				color: black;
+			}
+			
+			@for $index from 1 through 60 { // 60 is amount of indices
+				&:nth-child(#{$index}) {
+					transform: rotate(calc(#{$index} * 6deg));
+				}
+			}
+		}
+	}
+}
+
+.circle{
+	width: $clock-size;
+	height: $clock-size;
+	
+	border-radius: 50%;
+}
+
+.hand-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: $transition;
+}
+
+#hour-hand {
+	width: $hour-hand-width;
+	height: $hour-hand-length;
+	background-color: black;
+	transform: translateY(calc((#{$hour-hand-length} - 5px) / -2));
+	border-radius: $hour-hand-width;
+}
+
+#minute-hand {
+	width: $minute-hand-width;
+	height: $minute-hand-length;
+	background-color: black;
+	transform: translateY(calc((#{$minute-hand-length} - 5px) / -2));
+	border-radius: $minute-hand-width;
+}
+
+#second-hand {
+	width: $second-hand-width;
+	height: $second-hand-length;
+	background-color: red;
+	transform: translateY(calc((#{$second-hand-length} - 5px) / -2));
+	border-radius: $second-hand-width;
+}
