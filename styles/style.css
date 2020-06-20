@@ -144,11 +144,11 @@ h1 {
 }
 
 .controls button.submit {
-  color: #4e9b1a;
+  color: #5fbd21;
 }
 
 .controls button.reset {
-  color: #2980d6;
+  color: #359dff;
 }
 
 /* ===== CONFIG ===== */
@@ -584,8 +584,8 @@ h1 {
 }
 
 .toast.success {
-  border-color: #4e9b1a;
-  color: #4e9b1a;
+  border-color: #5fbd21;
+  color: #5fbd21;
 }
 
 .toast.almost {
@@ -594,13 +594,13 @@ h1 {
 }
 
 .toast.failure {
-  border-color: #b71c1c;
-  color: #b71c1c;
+  border-color: #d6960c;
+  color: #d6960c;
 }
 
 .toast.error {
-  border-color: #b71c1c;
-  color: #b71c1c;
+  border-color: #d6960c;
+  color: #d6960c;
 }
 
 .toast .message {

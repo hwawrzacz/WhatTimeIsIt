@@ -51,13 +51,13 @@
 }
 
 .toast.failure {
-  border-color: #b71c1c;
-  color: #b71c1c;
+  border-color: #ff1515;
+  color: #ff1515;
 }
 
 .toast.error {
-  border-color: #b71c1c;
-  color: #b71c1c;
+  border-color: #ff1515;
+  color: #ff1515;
 }
 
 .toast .message {

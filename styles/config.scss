@@ -19,11 +19,11 @@ $button-transition: 100ms;
 
 /* Colors */
 $bg-color-main: rgb(247, 241, 218);
-$primary: rgba(rgb(41, 128, 214), 2);
+$primary: rgba(rgb(53, 157, 255), 2);
 $accent: #b40c82;
-$success:rgb(78, 155, 26);
+$success:rgb(95, 189, 33);
 $warn: #d6960c;
-$danger: #b71c1c;
+$danger: $warn;
 
 $text-on-accent: white;
 $text-on-primary: white;
