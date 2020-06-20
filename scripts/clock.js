@@ -30,9 +30,6 @@ const repositionClocksHands = () => {
 const generateNewTime = () => {
     hour = Math.round(Math.random() * 100) % 12;
     minute = Math.round(Math.random() * 100) % 60;
-
-    console.log(hour);
-    console.log(minute);
 }
 
 const resetAnswer = () => {
